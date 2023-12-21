@@ -15,8 +15,12 @@ namespace NLogProject.Controllers
 
         public IActionResult Index()
         {
-            nlog.Info("test log");
-            Sum(85,69);
+            for (int i = 0; i < 100; i++)
+            {
+                nlog.Info("test log");
+                Sum(int.Parse("v"), int.Parse("s"));
+            }
+
             return View();
         }
 
